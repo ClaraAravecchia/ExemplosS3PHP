@@ -6,12 +6,12 @@
         public $sexo;
         public $data_nascimento;
 
-        function __construct($n, $e, $c, $s, $d){
-            $this->nome = $n;
-            $this->email = $e;
-            $this->cpf = $c;
-            $this->sexo = $s;
-            $this->data_nascimento = $d;
+        function __construct($vetor){
+            $this->nome = $vetor["nome"];
+            $this->email = $vetor["email"];
+            $this->cpf = $vetor["cpf"];
+            $this->sexo = $vetor["sexo"];
+            $this->data_nascimento = $vetor["data_nascimento"];
         }
 
 
